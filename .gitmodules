@@ -1,0 +1,3 @@
+[submodule "search-generic"]
+	path = search-generic
+	url = git@webis.uni-weimar.de:search-astar/search-generic.git
