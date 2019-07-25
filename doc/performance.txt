@@ -1,0 +1,3 @@
+No optimization:                        0.21 MB / state, 1000 states / s
+Incremental text updates:               0.19 MB / state, 1000 states / s
+Incremental text and n-gram updates:    0.02 MB / state,  300 states / s
