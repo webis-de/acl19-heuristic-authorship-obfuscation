@@ -17,7 +17,7 @@
 #include "operators/ContextlessSynonymOperator.hpp"
 #include "util/NgramProfile.hpp"
 #include "util/LayeredOStream.hpp"
-#include "util/netspeak.hpp"
+//#include "util/netspeak.hpp"
 
 #include "Obfuscator.hpp"
 
@@ -127,13 +127,13 @@ int main(int argc, char const* argv[])
         }
     }
 
-    std::cout << "Initializing Netspeak..." << std::endl;
-    try {
-        netspeak_util::init(netspeakHome);
-    } catch (std::exception const& e) {
-        std::cerr << "Error loading Netspeak:\n" << e.what() << std::endl;
-        return EXIT_FAILURE;
-    }
+//    std::cout << "Initializing Netspeak..." << std::endl;
+//    try {
+//        netspeak_util::init(netspeakHome);
+//    } catch (std::exception const& e) {
+//        std::cerr << "Error loading Netspeak:\n" << e.what() << std::endl;
+//        return EXIT_FAILURE;
+//    }
 
     unsigned int flags = 0;
     if (vm.count("strip-pos")) {

@@ -27,11 +27,11 @@ public:
     NetspeakOperator(std::string const& name, double cost, std::string const& description);
 
 protected:
-    static std::shared_ptr<netspeak::generated::Response> netspeakRequest(std::string const& request, std::uint32_t maxResults);
+//    static std::shared_ptr<netspeak::generated::Response> netspeakRequest(std::string const& request, std::uint32_t maxResults);
 
 private:
-    static std::mutex s_netspeakCacheMutex;
-    static bd::lru_cache<std::string, NetspeakResponse> s_netspeakRequestCache;
+//    static std::mutex s_netspeakCacheMutex;
+//    static bd::lru_cache<std::string, NetspeakResponse> s_netspeakRequestCache;
 };
 
 #endif //OBFUSCATION_SEARCH_NETSPEAKOPERATOR_HPP

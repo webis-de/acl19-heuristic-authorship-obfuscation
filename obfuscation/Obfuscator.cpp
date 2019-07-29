@@ -19,12 +19,13 @@
 #include "GoalCheck.hpp"
 #include "operators/NgramRemovalOperator.hpp"
 #include "operators/CharMapOperator.hpp"
-#include "operators/ContextlessSynonymOperator.hpp"
 #include "operators/ContextlessHypernymOperator.hpp"
 #include "operators/CharacterFlipOperator.hpp"
-#include "operators/WordReplacementOperator.hpp"
-#include "operators/WordRemovalOperator.hpp"
+#include "operators/ContextlessSynonymOperator.hpp"
+//#include "operators/WordReplacementOperator.hpp"
+//#include "operators/WordRemovalOperator.hpp"
 #include "search/generic/AstarSearch.hpp"
+#include <iomanip>
 
 /**
  * Run obfuscation.
@@ -86,10 +87,10 @@ void Obfuscator::obfuscate(std::stringstream& input, LayeredOStream& output, Con
             "Context-less synonyms", 10, "Replace synonyms without context consideration"));
     operators.push_back(std::make_unique<ContextlessHypernymOperator>(
             "Context-less hypernyms", 6, "Replace hypernyms without context consideration"));
-    operators.push_back(std::make_unique<WordReplacementOperator>(
-            "Word replacement", 4, "Replace a word when the replacement commonly appears in that context"));
-    operators.push_back(std::make_unique<WordRemovalOperator>(
-            "Word removal", 2, "Delete a word from the text if it's not strictly needed in its context"));
+//    operators.push_back(std::make_unique<WordReplacementOperator>(
+//            "Word replacement", 4, "Replace a word when the replacement commonly appears in that context"));
+//    operators.push_back(std::make_unique<WordRemovalOperator>(
+//            "Word removal", 2, "Delete a word from the text if it's not strictly needed in its context"));
     status->setOperators(std::move(operators));
 
     // configure other options

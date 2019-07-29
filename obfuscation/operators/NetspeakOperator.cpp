@@ -15,17 +15,17 @@
  */
 
 #include "NetspeakOperator.hpp"
-#include "util/netspeak.hpp"
+//#include "util/netspeak.hpp"
 
 /**
  * Netspeak request cache mutex.
  */
-std::mutex NetspeakOperator::s_netspeakCacheMutex{};
+//std::mutex NetspeakOperator::s_netspeakCacheMutex{};
 
 /**
  * Netspeak request cache.
  */
-bd::lru_cache<std::string, NetspeakOperator::NetspeakResponse> NetspeakOperator::s_netspeakRequestCache(1000);
+//bd::lru_cache<std::string, NetspeakOperator::NetspeakResponse> NetspeakOperator::s_netspeakRequestCache(1000);
 
 NetspeakOperator::NetspeakOperator(std::string const& name, double cost, std::string const& description)
         : AbstractWordOperator(name, cost, description)
@@ -39,19 +39,19 @@ NetspeakOperator::NetspeakOperator(std::string const& name, double cost, std::st
  * @param request Netspeak request to run
  * @return Netspeak answer
  */
-std::shared_ptr<netspeak::generated::Response> NetspeakOperator::netspeakRequest(std::string const& request, std::uint32_t maxResults)
-{
-    std::lock_guard<std::mutex> lock(s_netspeakCacheMutex);
-    auto responseOptional = s_netspeakRequestCache.get(request);
-    if (responseOptional) {
-        return responseOptional.get();
-    }
-
-    netspeak::generated::Request req;
-    req.set_query(request);
-    req.set_max_phrase_count(maxResults);
-    auto const response = netspeak_util::instance()->search(req);
-
-    s_netspeakRequestCache.insert(request, response);
-    return response;
-}
+//std::shared_ptr<netspeak::generated::Response> NetspeakOperator::netspeakRequest(std::string const& request, std::uint32_t maxResults)
+//{
+//    std::lock_guard<std::mutex> lock(s_netspeakCacheMutex);
+//    auto responseOptional = s_netspeakRequestCache.get(request);
+//    if (responseOptional) {
+//        return responseOptional.get();
+//    }
+//
+//    netspeak::generated::Request req;
+//    req.set_query(request);
+//    req.set_max_phrase_count(maxResults);
+//    auto const response = netspeak_util::instance()->search(req);
+//
+//    s_netspeakRequestCache.insert(request, response);
+//    return response;
+//}

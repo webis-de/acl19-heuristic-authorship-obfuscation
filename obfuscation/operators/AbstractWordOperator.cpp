@@ -15,6 +15,8 @@
  */
 
 #include "AbstractWordOperator.hpp"
+#include <boost/algorithm/string.hpp>
+#include <fstream>
 
 /**
  * Mutex for static bounds cache access.

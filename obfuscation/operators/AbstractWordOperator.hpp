@@ -22,7 +22,7 @@
 #include <string>
 #include <mutex>
 #include <deque>
-#include <netspeak/NetspeakRS3.hpp>
+//#include <netspeak/NetspeakRS3.hpp>
 #include <boost/compute/detail/lru_cache.hpp>
 
 namespace bd = boost::compute::detail;
@@ -35,7 +35,7 @@ public:
     AbstractWordOperator(std::string const& name, double cost, std::string const& description);
 
 protected:
-    typedef std::shared_ptr<netspeak::generated::Response> NetspeakResponse;
+//    typedef std::shared_ptr<netspeak::generated::Response> NetspeakResponse;
     typedef std::pair<StrPos, StrPos> WordBounds;
     typedef std::vector<WordBounds> WordBoundsList;
     typedef std::pair<WordBoundsList, WordBoundsList> WordBoundsListPair;
