@@ -3,10 +3,16 @@
 A* search framework for heuristic authorship obfuscation.
 [[Paper Link](https://webis.de/downloads/publications/papers/stein_2019m.pdf)]
 
-    @InProceedings{stein:2019m,
+    @InProceedings{stein:2019n,
       author =              {Janek Bevendorff and Martin Potthast and Matthias Hagen and Benno Stein},
-      booktitle =           {Proceedings of ACL 2019},
+      booktitle =           {57th Annual Meeting of the Association for Computational Linguistics (ACL 2019)},
+      editor =              {Anna Korhonen and Llu{\'i}s M{\`a}rquez and David Traum},
+      month =               jul,
+      pages =               {1098-1108},
+      publisher =           {Association for Computational Linguistics},
+      site =                {Florence, Italy},
       title =               {{Heuristic Authorship Obfuscation}},
+      url =                 {https://www.aclweb.org/anthology/P19-1104},
       year =                2019
     }
 
