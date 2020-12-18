@@ -18,8 +18,8 @@ find_package(OpenSSL REQUIRED)
 
 include_directories(
         ${CMAKE_SOURCE_DIR}/obfuscation
-        ${CMAKE_SOURCE_DIR}/search-generic/src
-        ${CMAKE_SOURCE_DIR}/search-generic/src/lib/thread-pool-cpp/include)
+        ${CMAKE_SOURCE_DIR}/search-generic
+        ${CMAKE_SOURCE_DIR}/search-generic/lib/thread-pool-cpp/include)
 #        ${Netspeak3_INCLUDE_DIR})
 
 add_subdirectory(search-generic)
