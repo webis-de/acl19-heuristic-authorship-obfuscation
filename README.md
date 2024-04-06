@@ -1,7 +1,7 @@
 # Heuristic Authorship Obfuscation Framework
 
 A* search framework for heuristic authorship obfuscation.
-[[Paper Link](https://webis.de/downloads/publications/papers/stein_2019m.pdf)]
+[[Paper Link](https://webis.de/publications.html#bevendorff_2019c)]
 
     @InProceedings{stein:2019n,
       author =              {Janek Bevendorff and Martin Potthast and Matthias Hagen and Benno Stein},
