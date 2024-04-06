@@ -17,6 +17,7 @@
 #ifndef OBFUSCATION_SEARCH_NGRAMPROFILE_HPP
 #define OBFUSCATION_SEARCH_NGRAMPROFILE_HPP
 
+#include <cstdint>
 #include <string>
 #include <map>
 #include <unordered_map>

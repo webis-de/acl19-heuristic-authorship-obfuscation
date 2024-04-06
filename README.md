@@ -19,8 +19,6 @@ A* search framework for heuristic authorship obfuscation.
     
 ## Dependencies
     
-    git submodule update --init --recursive
-    
     sudo apt install build-essential libboost-locale-dev libboost-serialization-dev \
         libboost-thread-dev libboost-filesystem-dev libboost-program-options-dev \
         libboost-regex-dev libssl-dev

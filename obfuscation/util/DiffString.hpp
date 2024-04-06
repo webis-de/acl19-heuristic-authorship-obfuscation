@@ -17,6 +17,7 @@
 #ifndef OBFUSCATION_SEARCH_DIFFSTRING_HPP
 #define OBFUSCATION_SEARCH_DIFFSTRING_HPP
 
+#include <cstdint>
 #include <memory>
 #include <string>
 #include <utility>
